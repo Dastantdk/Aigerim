@@ -1,0 +1,16 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page33802958.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^142341$ page67385173.html [NC]
+RewriteRule ^142341/$ page67385173.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+
